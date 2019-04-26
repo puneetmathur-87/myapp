@@ -14,7 +14,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if msg == "" {
 		msg = ":( SIMPLE_MSG variable not defined"
 	}
-	fmt.Fprintf(w, "<h1>%s</h1>", msg)
+	fmt.Fprintf(w, "<h1>This is changed %s</h1>", msg)
 }
 
 func main() {
